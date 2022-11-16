@@ -43,6 +43,7 @@ class _MyAppState extends State<MyApp> {
             ),
             Container(
               height: 250,
+              width: 300,
               decoration: BoxDecoration(
                   color: Colors.grey.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(10)),
@@ -52,17 +53,17 @@ class _MyAppState extends State<MyApp> {
                     ? Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
-                        children: const [
-                          Icon(
+                        children: [
+                          const Icon(
                             Icons.done_all_rounded,
                             color: Colors.green,
                             size: 35,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           Text(
-                            'Congratulation you won the lottery',
+                            'Congratulation you have won the lottery. \nYour number is $randomNumber',
                             textAlign: TextAlign.center,
                           )
                         ],
